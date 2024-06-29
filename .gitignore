@@ -1,0 +1,25 @@
+# Ignore all CSV files
+*.csv
+
+# Ignore CSV files even if they are in subdirectories
+**/*.csv
+
+
+# Ignore all CSV files
+*.txt
+
+# Ignore CSV files even if they are in subdirectories
+**/*.txt
+
+# Ignore all CSV files
+*.xls
+
+# Ignore CSV files even if they are in subdirectories
+**/*.xls
+
+/netbooks/
+
+*.npy 
+
+ **/*.npy
+

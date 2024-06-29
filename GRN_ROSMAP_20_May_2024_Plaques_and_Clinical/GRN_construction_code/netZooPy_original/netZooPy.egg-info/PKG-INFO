@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: netZooPy
+Version: 0.9.15
+Summary: Python implementation of netZoo.
+Home-page: https://github.com/netZoo/netZooPy
+Author: netZoo team
+Author-email: vfanfani@hsph.harvard.edu
+License: GPL-3
+License-File: LICENSE

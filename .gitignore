@@ -21,5 +21,10 @@
 
 *.npy 
 
- **/*.npy
+ /*.npy
+#directory
 
+/GRN_ROSMAP_20_May_2024_Plaques_and_Clinical/netbooks/
+/GRN_ROSMAP_20_May_2024_Plaques_and_Clinical/output_GRN/
+/GRN_ROSMAP_20_May_2024_Plaques_and_Clinical/Preprocessed_sample_specific_networks/
+/GRN_ROSMAP_20_May_2024_Plaques_and_Clinical/raw_data/

@@ -11,7 +11,7 @@ def main(args):
     print(f"start:, {args.start}")
     print(f"end:, {args.end}")
 
-    AD_filtered_data = pd.read_csv('AD_filtered_data.csv', index_col=0)
+    AD_filtered_data = pd.read_csv('../../GRN_ROSMAP_20_May_2024_Plaques_and_Clinical/data_output/communtiy_detection/AD_filtered_data.csv', index_col=0)
     genes= []
     TF = []
     for i in AD_filtered_data.index:
@@ -69,7 +69,7 @@ def main(args):
                         if condor_object.reg_memb[condor_object.reg_memb.reg == index].community.values == condor_object.reg_memb[condor_object.reg_memb.reg == col].community.values:
                             tf_matrix.loc[index,col] = tf_matrix.loc[index,col] + 1
         
-        tf_matrix.to_csv('./tf_matrix_similarity/'+str(i)+'.csv', index= True)
+        tf_matrix.to_csv('../../GRN_ROSMAP_20_May_2024_Plaques_and_Clinical/data_output/tf_matrix_similarity/'+str(i)+'.csv', index= True)
 
 
 
@@ -81,7 +81,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="")
     parser.add_argument('-s', '--start', type=int, default=0)
-    parser.add_argument('-e', '--end',type=int, default=91)
+    parser.add_argument('-e', '--end',type=int, default=95)
     
     args = parser.parse_args()
     main(args)
